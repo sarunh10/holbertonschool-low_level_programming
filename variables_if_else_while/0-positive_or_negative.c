@@ -2,6 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
+/** more headers goes there
+* main - posative or negative
+* always return 0
+*/ 
+
+
+
+
 int main(void)
 {
 int n;
