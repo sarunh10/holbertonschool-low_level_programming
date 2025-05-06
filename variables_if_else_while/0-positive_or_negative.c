@@ -2,19 +2,16 @@
 #include <time.h>
 #include <stdio.h>
 
-/** more headers goes there
-* main - posative or negative
-* always return 0
-*/ 
-
-
-
-
+/**
+* main - Entry point
+* Description:
+* Return:0
+*/
 int main(void)
 {
 int n;
 srand(time(0));
-n = rand() - RAND_MAX / 2;
+n = rand();
 if (n > 0)
 {
 printf("%d is positive\n", n);
