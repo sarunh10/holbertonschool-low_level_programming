@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
-* print_number - Prints an integer using _putchar only.
-* @n: The integer to be printed.
+* print_number - Prints an integer using only _putchar
+* @n: The integer to print
+*
+* Description: This function prints an integer, including
+* negative numbers, without using arrays, pointers, or long.
 */
 void print_number(int n)
 {
