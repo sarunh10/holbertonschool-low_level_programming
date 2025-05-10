@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+* main - Entry point, modifies array using pointer
+* Return: Always 0
+*/
 int main(void)
 {
 int n;
