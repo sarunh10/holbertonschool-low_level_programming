@@ -1,7 +1,9 @@
 #include <stdio.h>
-
-
-
+/**
+* main - modifies a[2] to be 98 using pointer
+* without accessing the array directly
+* Return: Always 0
+*/
 int main(void)
 {
 int n;
