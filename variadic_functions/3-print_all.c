@@ -3,19 +3,16 @@
 #include <stdarg.h>
 
 /**
-* print_all - يطبع أنواع مختلفة من �
-* @format: سلسلة تحدد نوع
+* print_all - Prints anything, based on format string
+* @format: A list of types of arguments passed to the function
 */
-void print_all(
-const char * const format, ...)
+void print_all(const char * const format, ...)
 {
-va_list args;
-unsigned int i = 0;
+int i = 0;
 char *str, *sep = "";
+va_list args;
 va_start(args, format);
-if (format)
-{
-while (format[i])
+while (format && format[i])
 {
 switch (format[i])
 {
@@ -34,12 +31,12 @@ if (!str)
 str = "(nil)";
 printf("%s%s", sep, str);
 break;
+default:
+i++;
+continue;
 }
-if (format[i] == 'c' || format[i] == 'i' ||
-format[i] == 'f' || format[i] == 's')
 sep = ", ";
 i++;
-}
 }
 va_end(args);
 printf("\n");
